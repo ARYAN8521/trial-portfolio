@@ -1665,16 +1665,16 @@
 
 
 <!-- JavaScript Functions -->
-<script>
+      
 function openModal(id) {
   document.getElementById(id).style.display = 'flex';
-  document.body.style.overflow = 'hidden'; // Prevent background scroll
+  window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to top
 }
+
 function closeModal(id) {
   document.getElementById(id).style.display = 'none';
-  document.body.style.overflow = 'auto'; // Re-enable scroll
 }
-</script>
+
 
 
   </div>

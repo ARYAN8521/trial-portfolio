@@ -1668,34 +1668,15 @@
   <span onclick="closeModal('modal6')" style="position:absolute;top:40px;right:60px;color:#fff;font-size:40px;cursor:pointer;z-index:1100;">&times;</span>
   <img src="dca-certificate.png" style="max-width:90vw;max-height:90vh;box-shadow:0 0 40px 10px #00eaff,0 0 80px 30px #0ff;border-radius:10px;">
 </div>
-
-<!-- JavaScript Functions -->
+      
 <script>
-function openModal(id, cardElement) {
-  const modal = document.getElementById(id);
-  const cardRect = cardElement.getBoundingClientRect();
-  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  
-  // Calculate position to center modal on the card's location
-  const cardTop = cardRect.top + scrollTop;
-  
-  // Scroll to card position smoothly
-  window.scrollTo({
-    top: cardTop - (window.innerHeight / 2) + (cardRect.height / 2),
-    behavior: 'smooth'
-  });
-  
-  // Show modal after a short delay to allow scroll
-  setTimeout(() => {
-    modal.style.display = 'flex';
-  }, 300);
+function openModal(id) {
+  document.getElementById(id).style.display = 'flex';
 }
-
 function closeModal(id) {
   document.getElementById(id).style.display = 'none';
 }
 </script>
-
 
 
 

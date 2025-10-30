@@ -1665,15 +1665,18 @@
 
 
 <!-- JavaScript Functions -->
-      
+<script>
 function openModal(id) {
+  window.scrollTo(0, 0); // Scroll to top first
   document.getElementById(id).style.display = 'flex';
-  window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to top
+  document.body.style.overflow = 'hidden'; // Then lock scroll
 }
-
 function closeModal(id) {
   document.getElementById(id).style.display = 'none';
+  document.body.style.overflow = 'auto'; // Re-enable scroll
 }
+</script>
+
 
 
 

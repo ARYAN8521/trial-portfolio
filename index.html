@@ -1583,6 +1583,316 @@
 
 
 
+ <!-- oracle -->    
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oracle Analytics Cloud Certification - Aryan Kumar Sahu</title>
+    <style>
+        :root {
+            --primary-bg: #0a192f;
+            --card-bg: #112240;
+            --accent-cyan: #64ffda;
+            --text-primary: #ccd6f6;
+            --text-secondary: #8892b0;
+            --border-color: rgba(100, 255, 218, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--primary-bg);
+            color: var(--text-primary);
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h1 {
+            font-size: 2.5rem;
+            color: var(--accent-cyan);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .section-header h2 {
+            font-size: 1.8rem;
+            color: var(--text-primary);
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .oracle-logo {
+            display: inline-block;
+            color: #f80000;
+            font-weight: 700;
+            font-size: 1.2em;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .cert-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cert-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-cyan), #64d4ff);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .cert-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .cert-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-cyan);
+            box-shadow: 0 10px 30px rgba(100, 255, 218, 0.1);
+        }
+
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(100, 255, 218, 0.1);
+            border-radius: 10px;
+        }
+
+        .card-icon svg {
+            width: 35px;
+            height: 35px;
+            fill: var(--accent-cyan);
+        }
+
+        .cert-card h3 {
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .cert-card p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .cert-badge {
+            display: inline-block;
+            background: rgba(100, 255, 218, 0.1);
+            color: var(--accent-cyan);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .card-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 12px 24px;
+            border: 1px solid var(--accent-cyan);
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            display: block;
+            width: fit-content;
+        }
+
+        .card-link:hover {
+            background: rgba(100, 255, 218, 0.1);
+            transform: translateX(5px);
+        }
+
+        .card-link svg {
+            width: 16px;
+            height: 16px;
+            fill: var(--accent-cyan);
+        }
+
+        .achievement-date {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .cert-preview {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 15px 0;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease;
+        }
+
+        .cert-preview:hover {
+            transform: scale(1.02);
+            border-color: var(--accent-cyan);
+        }
+
+        @media (max-width: 768px) {
+            .section-header h1 {
+                font-size: 2rem;
+            }
+
+            .section-header h2 {
+                font-size: 1.4rem;
+            }
+
+            .cards-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section-header">
+            <h1><span class="oracle-logo">Oracle</span> Analytics Cloud</h1>
+            <h2>Certified Professional 2025</h2>
+            <p>Successfully completed the Oracle Analytics Cloud Professional certification, demonstrating expertise in cloud analytics, business intelligence, and data visualization.</p>
+        </div>
+
+        <div class="cards-container">
+            <!-- Certificate Card -->
+            <div class="cert-card">
+                <div class="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M14 2H6C4.9 2 4 2.9 4 4v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 15h8v2H8v-2zm0-4h8v2H8v-2zm0-4h5v2H8V7z"/>
+                    </svg>
+                </div>
+                <span class="cert-badge">Official Certificate</span>
+                <h3>Digital Certificate</h3>
+                <p>Oracle University verified digital certificate showcasing professional-level expertise in Oracle Analytics Cloud implementation and administration.</p>
+                
+                <!-- Add your certificate PNG here -->
+                <img src="certi.png" alt="Oracle Certificate" class="cert-preview">
+                
+                <a href="certi.pdf" class="card-link">
+                    View Certificate
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                    </svg>
+                </a>
+                <div class="achievement-date">
+                    Issued: November 2025
+                </div>
+            </div>
+
+            <!-- Badge Card -->
+            <div class="cert-card">
+                <div class="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.7-6.3 4.7 2.3-7-6-4.6h7.6z"/>
+                    </svg>
+                </div>
+                <span class="cert-badge">Digital Badge</span>
+                <h3>Oracle Acclaim Badge</h3>
+                <p>Shareable digital badge from Oracle University that can be displayed on LinkedIn, email signatures, and professional profiles worldwide.</p>
+                
+                <!-- Add your badge PNG here -->
+                <img src="badge.png" alt="Oracle Badge" class="cert-preview">
+                
+                <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=3D589FE51242B08B34B6343A0FF42F49BCC9A146D647ACAB60C2C1938D3EDD54" class="card-link">
+                    View Badge
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                    </svg>
+                </a>
+                <div class="achievement-date">
+                    Issued: November 2025
+                </div>
+            </div>
+
+            <!-- Exam Result Card -->
+            <div class="cert-card">
+                <div class="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                    </svg>
+                </div>
+                <span class="cert-badge">Passed</span>
+                <h3>Exam Results</h3>
+                <p>Official exam score report for Oracle Analytics Cloud 2025 Professional (1Z0-1041-25), demonstrating comprehensive knowledge and practical skills.</p>
+                
+                <!-- Add your exam result PNG here -->
+                <img src="result.png" alt="Exam Results" class="cert-preview">
+                
+                <a href="result.pdf" class="card-link">
+                    View Results
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                    </svg>
+                </a>
+                <div class="achievement-date">
+                    Exam Code: 1Z0-1041-25
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+        
+
+
+
+
+
+        
         
 
 <!-- Certificates -->
